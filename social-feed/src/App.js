@@ -1,4 +1,4 @@
-import React, {useState}f= from 'react';
+import React, {useState}from 'react';
 import Post from './Components/Post/Post';
 
 function App() {
