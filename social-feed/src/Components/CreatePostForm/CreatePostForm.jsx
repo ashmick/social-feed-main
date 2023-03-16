@@ -1,20 +1,24 @@
-// import React from 'react'
+import React, {useState} from 'react';
 
-// const CreatePostForm = (props) => {
+const CreatePostForm = (props) => {
     
-    
-    
-//     const[post, setPost] = useState('');
+    function addNewPost (event) {
+        event.preventDefault();
+        let newPost= {
+            post: post,
+        };
 
-//     function addNewPost (post) {
+        console.log(newPost);
+        props.addNewPostProperty(newPost)
 
-//         let newPost= {
-//             post: post,
-//             date: date
-//         };
-//         console.log(newPost);
-        
-//     }
+    }
 
+return(
+    <form onSubmit={addNewPost}>
+        <label> Name </label>     
+        <input type= 'text' value= {post} onchange={(event)=> setPost(event.target.value)} />
+    </form>
+);
+}
 
-// }
+export default CreatePostForm;
