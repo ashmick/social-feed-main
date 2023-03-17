@@ -1,25 +1,26 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-
-// Within the Post component create a template of how you would like each individual
-//  post to be displayed. This will include the user’s name, the body of the post, 
-//  and the “like” and “dislike” buttons.
 
 const Post = (props) => {
-    const [post, setPost]= useState('');
+const [name, setName]= useState('')
+const [message, setMessage]= useState ('')
 
 
-function createNewPost (post) {
-    post.preventDefault();
-    let newPost = {
-    post: post
-    };
+function addPostToList (event){
 
-    console.log (newPost);
-    props.addnewPostProperty (newPost)
+    let newList = []
+
+return (
+    <ul>
+        <label> Feed </label>
+        <li> Post 1</li>
+        <li>Post 2 </li>
+        <li>Post 3 </li>
+    </ul>
+
+
+);
 }
-
 }
 
 export default Post;
-
