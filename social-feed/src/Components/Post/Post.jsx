@@ -6,8 +6,8 @@ const Post = (props) => {
             <div>
                 {props.parentPosts.map((post, index) =>{
                 return(
-                    <ul>  
-                            <li>{post.name}</li>
+                    <ul className="border-box">  
+                            <li className="list-name">{post.name}</li>
                             <li>{post.message} </li>
                     </ul>
                 );

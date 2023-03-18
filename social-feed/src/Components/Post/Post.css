@@ -1,0 +1,13 @@
+ul{
+    border: 4px;
+    border-style: solid;
+    border-color:black;
+    list-style: none;
+    
+}
+
+.list-name{
+    font-size: 28px;
+    display:flex;
+    align-self: start;
+}
