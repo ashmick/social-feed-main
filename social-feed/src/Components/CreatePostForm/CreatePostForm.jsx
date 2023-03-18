@@ -16,12 +16,15 @@ const [message, setMessage]= useState('')
         console.log(newPost);
         addToList(newPost)
 
+
     }
 
     function addToList (newPost){
 
         let tempPosts= [...props.posts, newPost]
         console.log(tempPosts)
+        props.addNewPostProperty(newPost)
+
     }
 
 return(
