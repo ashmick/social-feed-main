@@ -1,9 +1,8 @@
 import React, {useState}from 'react';
-import Post from './Components/Post/Post';
+import PostList from './Components/PostList';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 import NavBar from './Components/NavBar/NavBar';
 import './App.css'
-import './Components/Post/Post.css'
 
 function App() {
 
@@ -16,7 +15,7 @@ function addNewPost(post){
   setPosts(tempPosts)
 }
   return (
-    <div class="border-box">
+    <div className="border-box">
       <h1 >
         <NavBar/>
       </h1>
@@ -26,7 +25,7 @@ function addNewPost(post){
       </div>
 
       <div className="post-list">
-        <Post parentPosts={posts} />
+        <PostList parentPosts={posts} />
 
       </div>
        
