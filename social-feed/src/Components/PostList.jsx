@@ -12,9 +12,9 @@ const PostList = (props) => {
                 <ul className="border-box">
                 {props.parentPosts.map((post, index) =>{
                     {console.log(post, "post list")}
-                    <Post post={post} />
+                    return <Post post={post} />
               }
-                )};
+                )}
                 </ul>
             </div>
         )};
